@@ -8,27 +8,38 @@ public class generarObstaculo : MonoBehaviour {
     public string partitura;
     public float tiempoMin = 1f;
     public float tiempoMax = 1f;
-    
+    private int contador = 0;
+    private string[] notas;
     // Use this for initialization
     void Start()
     {
-       // int size = partitura.Split(',').Length;
+       notas = partitura.Split(',');
         generar();
         
     }
 
-    
-
-    // Update is called once per frame
     void Update()
     {
-       // Invoke("generar", Random.Range(tiempoMin, tiempoMax));
+      
     }
 
     void generar()
     {
 
-        Instantiate(obs[Random.Range(0, obs.Length)], transform.position, Quaternion.identity);
-        Invoke("generar", Random.Range(tiempoMin, tiempoMax));
+        if (contador < notas.Length)
+        {
+            int index = 0;
+
+            if (notas[contador].Equals("N"))
+                index = 0;
+            if (notas[contador].Equals("R"))
+                index = 1;
+            if(notas[contador].Equals("B"))
+                index = 2;
+
+            Instantiate(obs[index], transform.position, Quaternion.identity);
+            contador++;
+            Invoke("generar", Random.Range(tiempoMin, tiempoMax));
+        }
     }
 }
