@@ -108,6 +108,21 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &432166077 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100036, guid: 07b4c3242d3e4f6418fd6a3c035332c1, type: 2}
+  m_PrefabInternal: {fileID: 828713512}
+--- !u!114 &432166079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 432166077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307ecbdfb1cedfd4c9e3c24a55fa5e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &763289101
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 0.05
+  pausa: 0
 --- !u!114 &1434570946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,6 +940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ixPos: 42.7
   fxPos: -23.07
+  pausa: 0
 --- !u!1 &1513801140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,6 +1157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 0.05
+  pausa: 0
 --- !u!114 &1981991920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,6 +1171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ixPos: 42.7
   fxPos: -23.07
+  pausa: 0
 --- !u!1 &2040120704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 0.05
+  pausa: 0
 --- !u!114 &2142951229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,3 +1338,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ixPos: 42.7
   fxPos: -23.07
+  pausa: 0
