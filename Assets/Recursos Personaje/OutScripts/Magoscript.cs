@@ -5,8 +5,7 @@ using UnityEngine;
 public class Magoscript : MonoBehaviour {
 
     Animator anim;
-    int saltoHash = Animator.StringToHash("Saltar");
-
+    int saltoHash = Animator.StringToHash("Saltar"); 
     // Use this for initialization
     void Start()
     {
@@ -17,10 +16,9 @@ public class Magoscript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyUp("space"))
-        {
-            anim.SetTrigger(saltoHash);
-        }
+		if (Input.GetKeyDown (KeyCode.Space)) 
+		{
+			anim.SetTrigger (saltoHash);
+		}
     }
 }
