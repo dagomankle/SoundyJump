@@ -6,6 +6,7 @@ public class Magoscript : MonoBehaviour {
 
     Animator anim;
     int saltoHash = Animator.StringToHash("Saltar");
+    public float velocidad;
 
     // Use this for initialization
     void Start()
@@ -20,7 +21,10 @@ public class Magoscript : MonoBehaviour {
 
         if (Input.GetKeyUp("space"))
         {
-            anim.SetTrigger(saltoHash);
+            anim.SetTrigger(saltoHash);// moviemento fisico cambiar tiempo de animacion ????
+            while(true)
+                transform.position = new Vector3(transform.position.x - velocidad, transform.position.y, transform.position.z);
+
         }
     }
 }
